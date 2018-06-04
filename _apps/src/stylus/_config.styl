@@ -2,3 +2,56 @@
 
 c_black = #000000
 c_white = #ffffff
+
+@font-face
+  font-family "mplus-1c-light"
+  src ('../fonts/mplus-1c-light.eot')
+  src url('../fonts/mplus-1c-light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/mplus-1c-light.woff') format('woff'),
+      url('../fonts/mplus-1c-light.ttf') format('truetype')
+@font-face
+  font-family "mplus-1c-thin"
+  src ('../fonts/mplus-1c-thin.eot')
+  src url('../fonts/mplus-1c-thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/mplus-1c-thin.woff') format('woff'),
+      url('../fonts/mplus-1c-thin.ttf') format('truetype')
+
+*
+  box-sizing border-box
+
+body
+  background c_white
+  color c_black
+  font-size 10px
+  font-family 'selfFont', 'Open Sans', sans-serif
+
+.clearfix
+  display inline-block
+  &:after
+    content "."
+    display block
+    height 0
+    font-size 0
+    clear both
+    visibility hidden
+
+img
+  width 100%
+  display block
+
+a
+  color #b3b3b3
+  &:hover
+    opacity 0.6
+    img
+      opacity 0.6
+
+.txL
+  text-align left
+.txR
+  text-align right
+.txC
+  text-align center
+
+.fwB
+  font-weight bold

@@ -1,15 +1,27 @@
 // メディアクエリ
 // breakpoint
-sp_max = 768px
+tb_max = 768px
+sp_max = 600px
 
 pc(){
-  @media screen and (min-width : sp_max){
+  @media screen and (min-width : tb_max){
     {block}
   }
 }
-
+tb(){
+  @media screen and (min-width : sp_max) and (max-width : tb_max){
+    {block}
+  }
+}
 sp(){
   @media screen and (max-width : sp_max){
     {block}
   }
 }
+
+
+// ベンダープレフィックス
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  {prop} args
